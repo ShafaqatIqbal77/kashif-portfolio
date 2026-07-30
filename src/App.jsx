@@ -8,6 +8,7 @@ import Services from './components/Services';
 import Regions from './components/Regions';
 import Timeline from './components/Timeline';
 import Testimonials from './components/Testimonials';
+import Team from './components/Team';
 import CaseStudies from './components/CaseStudies';
 import MediaAccreditation from './components/MediaAccreditation';
 import Contact from './components/Contact';
@@ -30,6 +31,7 @@ export default function App() {
           <Regions />
           <Timeline />
           <Testimonials />
+          <Team />
           <CaseStudies />
           <MediaAccreditation />
           <Contact />

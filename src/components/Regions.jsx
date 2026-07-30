@@ -87,7 +87,7 @@ export default function Regions() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className={`p-8 rounded-3xl bg-white dark:bg-navy-900 border shadow-xl ${reg.color} relative flex flex-col justify-between`}
+              className={`p-8 rounded-3xl bg-white dark:bg-navy-900 border shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 ${reg.color} relative flex flex-col justify-between`}
             >
               <div>
                 <div className="flex items-center justify-between mb-4">

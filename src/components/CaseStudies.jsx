@@ -62,7 +62,7 @@ export default function CaseStudies() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="rounded-3xl bg-slate-50 dark:bg-navy-800/90 border border-slate-200/80 dark:border-white/10 p-8 flex flex-col justify-between shadow-lg hover:shadow-2xl hover:border-gold-500/40 transition-all duration-300 group"
+              className="rounded-3xl bg-slate-50 dark:bg-navy-800/90 border border-slate-200/80 dark:border-white/10 p-8 flex flex-col justify-between shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:border-gold-500/40 transition-all duration-300 group"
             >
               <div>
                 <div className="flex items-center justify-between mb-6">

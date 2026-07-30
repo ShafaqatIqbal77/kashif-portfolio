@@ -5,29 +5,12 @@ import { Award, Building2, Globe, TrendingUp, ShieldCheck, Milestone } from 'luc
 export default function Timeline() {
   const milestones = [
     {
-      year: '2016',
+      year: '2025',
       title: 'Founding of MK Global Recruitment',
       description: 'Muhammad Kashif establishes MK Global Recruitment Agency in Islamabad/Faisal Hills region, driven by the vision to organize and elevate overseas manpower recruitment from Pakistan.',
       icon: <Building2 className="w-5 h-5 text-gold-400" />,
     },
-    {
-      year: '2018',
-      title: 'Expansion into GCC Construction & Oil/Gas',
-      description: 'Secured major recruitment mandates in Saudi Arabia and the UAE, deploying over 300 skilled technical personnel and trade workers in a single calendar year.',
-      icon: <Globe className="w-5 h-5 text-tealAccent-400" />,
-    },
-    {
-      year: '2021',
-      title: 'State-of-the-Art Trade Testing Facility',
-      description: 'Partnered with certified vocational and trade testing centers across Pakistan to guarantee strict quality verification before candidate departure.',
-      icon: <ShieldCheck className="w-5 h-5 text-emerald-400" />,
-    },
-    {
-      year: '2023',
-      title: 'European Gateway & High-Skill Division',
-      description: 'Pioneered placement corridors into European markets (Germany, Romania, UK, Poland), supplying healthcare nurses, IT engineers, and factory technicians.',
-      icon: <TrendingUp className="w-5 h-5 text-indigo-400" />,
-    },
+
     {
       year: '2025 - Present',
       title: '1,000+ Placements Milestone & Corporate Headquarters',

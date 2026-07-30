@@ -32,14 +32,44 @@ export default function Contact() {
     return Object.keys(errs).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (validate()) {
       setIsSubmitting(true);
-      setTimeout(() => {
+      
+      try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            // REPLACE THIS KEY with your Web3Forms Access Key for Kashifkhannn123@gmail.com
+            access_key: "4a4292aa-27df-4819-af6a-063a195c47a1", 
+            subject: `New Inquiry from ${formData.name} - MK Global Recruitment`,
+            from_name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            role: formData.role,
+            service: formData.service,
+            message: formData.message,
+          }),
+        });
+        
+        const result = await response.json();
+        if (result.success) {
+          setSubmitted(true);
+        } else {
+          console.error("Submission failed", result);
+          alert("Failed to send the message. Please ensure your access key is correct.");
+        }
+      } catch (error) {
+        console.error("Error submitting form", error);
+        alert("An error occurred while sending the message. Please try again.");
+      } finally {
         setIsSubmitting(false);
-        setSubmitted(true);
-      }, 1000);
+      }
     }
   };
 
@@ -98,7 +128,7 @@ export default function Contact() {
                 </div>
                 <h4 className="text-xs font-extrabold uppercase text-slate-400">Direct Email</h4>
                 <p className="text-sm font-bold text-navy-900 dark:text-white mt-1 break-all">
-                  ceo@mkglobalrecruitment.com
+                  Kashifkhannn123@gmail.com
                 </p>
               </div>
 
@@ -108,7 +138,7 @@ export default function Contact() {
                 </div>
                 <h4 className="text-xs font-extrabold uppercase text-slate-400">Call / WhatsApp</h4>
                 <p className="text-sm font-bold text-navy-900 dark:text-white mt-1">
-                  +92 300 1234567
+                  03130919597
                 </p>
               </div>
             </div>
@@ -136,7 +166,7 @@ export default function Contact() {
                   </svg>
                 </a>
                 <a
-                  href="https://wa.me/923001234567"
+                  href="https://wa.me/923130919597"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="WhatsApp Business"
@@ -249,7 +279,7 @@ export default function Contact() {
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        placeholder="e.g. Eng. Ahmed Al-Rashid"
+                        placeholder=""
                         className={`w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-navy-800 border text-sm text-navy-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-gold-500 transition-all ${
                           errors.name ? 'border-rose-500' : 'border-slate-200 dark:border-white/10'
                         }`}
@@ -267,7 +297,7 @@ export default function Contact() {
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        placeholder="name@company.com"
+                        placeholder=""
                         className={`w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-navy-800 border text-sm text-navy-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-gold-500 transition-all ${
                           errors.email ? 'border-rose-500' : 'border-slate-200 dark:border-white/10'
                         }`}
@@ -288,7 +318,7 @@ export default function Contact() {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="+92 300 1234567"
+                        placeholder=""
                         className={`w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-navy-800 border text-sm text-navy-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-gold-500 transition-all ${
                           errors.phone ? 'border-rose-500' : 'border-slate-200 dark:border-white/10'
                         }`}
@@ -327,7 +357,7 @@ export default function Contact() {
                       rows="4"
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Please specify candidate numbers, required trade skills, project location, or your career background..."
+                      placeholder=""
                       className={`w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-navy-800 border text-sm text-navy-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-gold-500 transition-all ${
                         errors.message ? 'border-rose-500' : 'border-slate-200 dark:border-white/10'
                       }`}

@@ -119,9 +119,13 @@ export default function Services() {
               {/* Employers Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {employerServices.map((srv, idx) => (
-                  <div
+                  <motion.div
                     key={idx}
-                    className="p-6 rounded-2xl bg-slate-50 dark:bg-navy-800 border-2 border-slate-200 dark:border-white/10 hover:border-gold-500 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: idx * 0.1 }}
+                    className="p-6 rounded-2xl bg-slate-50 dark:bg-navy-800 border-2 border-slate-200 dark:border-white/10 hover:border-gold-500 hover:-translate-y-1 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
                   >
                     <div>
                       <div className="w-12 h-12 rounded-xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-white/10 shadow-md flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
@@ -138,7 +142,7 @@ export default function Services() {
                       <span>Enterprise Service</span>
                       <ArrowRight className="w-3.5 h-3.5 ml-auto" />
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
 
@@ -171,9 +175,13 @@ export default function Services() {
               {/* Candidates Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {candidateServices.map((srv, idx) => (
-                  <div
+                  <motion.div
                     key={idx}
-                    className="p-6 rounded-2xl bg-slate-50 dark:bg-navy-800 border-2 border-slate-200 dark:border-white/10 hover:border-tealAccent-500 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: idx * 0.1 }}
+                    className="p-6 rounded-2xl bg-slate-50 dark:bg-navy-800 border-2 border-slate-200 dark:border-white/10 hover:border-tealAccent-500 hover:-translate-y-1 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
                   >
                     <div>
                       <div className="w-12 h-12 rounded-xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-white/10 shadow-md flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
@@ -190,7 +198,7 @@ export default function Services() {
                       <span>Candidate Guidance</span>
                       <ArrowRight className="w-3.5 h-3.5 ml-auto" />
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
 
@@ -227,9 +235,13 @@ export default function Services() {
 
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
             {recruitmentSteps.map((step, index) => (
-              <div
+              <motion.div
                 key={index}
-                className="relative p-5 rounded-2xl bg-slate-50 dark:bg-navy-800 border-2 border-slate-200 dark:border-white/10 text-center shadow-md"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                className="relative p-5 rounded-2xl bg-slate-50 dark:bg-navy-800 border-2 border-slate-200 dark:border-white/10 text-center shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
               >
                 <span className="text-3xl font-black text-gold-600 dark:text-gold-400 block mb-2">
                   {step.num}
@@ -240,7 +252,7 @@ export default function Services() {
                 <p className="text-xs text-slate-700 dark:text-slate-300 font-medium leading-relaxed">
                   {step.desc}
                 </p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

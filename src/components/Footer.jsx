@@ -110,11 +110,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-tealAccent-400 shrink-0" />
-                <span className="text-slate-200">ceo@mkglobalrecruitment.com</span>
+                <span className="text-slate-200">Kashifkhannn123@gmail.com</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-gold-400 shrink-0" />
-                <span className="text-slate-200">+92 300 1234567</span>
+                <span className="text-slate-200">03130919597</span>
               </li>
             </ul>
           </div>
@@ -123,7 +123,12 @@ export default function Footer() {
 
         {/* Bottom Copyright & Back To Top */}
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>© {new Date().getFullYear()} MK Global Recruitment Agency. All Rights Reserved. CEO: Muhammad Kashif.</p>
+          <div className="space-y-1">
+            <p>© {new Date().getFullYear()} MK Global Recruitment Agency. All Rights Reserved. CEO: Muhammad Kashif.</p>
+            <p className="text-gold-500/80 font-medium tracking-wide text-[10px] uppercase">
+              Designed & Developed by Shafaqat Iqbal
+            </p>
+          </div>
 
           <button
             onClick={scrollToTop}
