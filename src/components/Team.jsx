@@ -8,8 +8,9 @@ export default function Team() {
       id: 1,
       name: 'Muhammad Adil',
       role: 'Operations Manager',
-      email: 'adil@mkglobalrecruitment.com',
-      phone: '+92 300 1111111'
+      email: 'Muhammadadil32@gmail.com',
+      phone: '+92 310 0121290',
+      image: '/src/assets/team/muhammad_adil.jpg'
     },
     {
       id: 2,
@@ -90,6 +91,17 @@ export default function Team() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-white dark:bg-navy-900 rounded-3xl p-6 border border-slate-200/80 dark:border-white/10 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
             >
+              {member.image && (
+                <div className="relative mb-6">
+                  <div className="w-24 h-24 mx-auto rounded-full p-1 bg-gradient-to-tr from-gold-500 to-amber-300">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover rounded-full border-2 border-white dark:border-navy-900"
+                    />
+                  </div>
+                </div>
+              )}
               <div className="text-center space-y-1 mb-4">
                 <h3 className="text-lg font-bold text-navy-900 dark:text-white group-hover:text-gold-500 transition-colors">
                   {member.name}
