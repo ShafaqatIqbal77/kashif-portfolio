@@ -17,7 +17,8 @@ export default function Team() {
       name: 'Muhammad Mushtaq',
       role: 'Senior Talent Acquisition Manager',
       email: 'mushtaq@mkglobalrecruitment.com',
-      phone: '+92 300 2222222'
+      phone: '+92 313 5097745',
+      image: '/src/assets/team/muhammad_mushtaq.jpg'
     },
     {
       id: 3,
