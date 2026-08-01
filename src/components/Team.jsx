@@ -14,57 +14,57 @@ export default function Team() {
     },
     {
       id: 2,
-      name: 'Muhammad Zeeshan',
+      name: 'Muhammad Mushtaq',
       role: 'Senior Talent Acquisition Manager',
-      email: 'zeeshan@mkglobalrecruitment.com',
+      email: 'mushtaq@mkglobalrecruitment.com',
       phone: '+92 300 2222222',
       image: 'https://i.pravatar.cc/150?img=12'
     },
     {
       id: 3,
-      name: 'Ahmed Khan',
+      name: 'Ahsan Rasheed',
       role: 'Recruitment Specialist',
-      email: 'ahmed.k@mkglobalrecruitment.com',
+      email: 'ahsan@mkglobalrecruitment.com',
       phone: '+92 300 3333333',
       image: 'https://i.pravatar.cc/150?img=13'
     },
     {
       id: 4,
-      name: 'Tariq Al-Mansoor',
+      name: 'Umer Tuseef',
       role: 'HR Executive',
-      email: 'tariq@mkglobalrecruitment.com',
+      email: 'umer@mkglobalrecruitment.com',
       phone: '+92 300 4444444',
       image: 'https://i.pravatar.cc/150?img=14'
     },
     {
       id: 5,
-      name: 'Sarah Qureshi',
+      name: 'Jawad Maroof',
       role: 'Client Relations',
-      email: 'sarah@mkglobalrecruitment.com',
+      email: 'jawad@mkglobalrecruitment.com',
       phone: '+92 300 5555555',
       image: 'https://i.pravatar.cc/150?img=5'
     },
     {
       id: 6,
-      name: 'Bilal Ahmad',
+      name: 'Nasir Ali',
       role: 'Trade Testing Coordinator',
-      email: 'bilal@mkglobalrecruitment.com',
+      email: 'nasir@mkglobalrecruitment.com',
       phone: '+92 300 6666666',
       image: 'https://i.pravatar.cc/150?img=15'
     },
     {
       id: 7,
-      name: 'Usman Ali',
+      name: 'Zarak Maqsood',
       role: 'Visa & Compliance Officer',
-      email: 'usman@mkglobalrecruitment.com',
+      email: 'zarak@mkglobalrecruitment.com',
       phone: '+92 300 7777777',
       image: 'https://i.pravatar.cc/150?img=16'
     },
     {
       id: 8,
-      name: 'Fatima Noor',
+      name: 'Akhtar Ullah',
       role: 'PR & Communications',
-      email: 'fatima@mkglobalrecruitment.com',
+      email: 'akhtar@mkglobalrecruitment.com',
       phone: '+92 300 8888888',
       image: 'https://i.pravatar.cc/150?img=9'
     }
