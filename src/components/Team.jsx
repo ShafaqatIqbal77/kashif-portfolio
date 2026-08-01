@@ -9,64 +9,56 @@ export default function Team() {
       name: 'Muhammad Adil',
       role: 'Operations Manager',
       email: 'adil@mkglobalrecruitment.com',
-      phone: '+92 300 1111111',
-      image: 'https://i.pravatar.cc/150?img=11'
+      phone: '+92 300 1111111'
     },
     {
       id: 2,
       name: 'Muhammad Mushtaq',
       role: 'Senior Talent Acquisition Manager',
       email: 'mushtaq@mkglobalrecruitment.com',
-      phone: '+92 300 2222222',
-      image: 'https://i.pravatar.cc/150?img=12'
+      phone: '+92 300 2222222'
     },
     {
       id: 3,
       name: 'Ahsan Rasheed',
       role: 'Recruitment Specialist',
       email: 'ahsan@mkglobalrecruitment.com',
-      phone: '+92 300 3333333',
-      image: 'https://i.pravatar.cc/150?img=13'
+      phone: '+92 300 3333333'
     },
     {
       id: 4,
       name: 'Umer Tuseef',
       role: 'HR Executive',
       email: 'umer@mkglobalrecruitment.com',
-      phone: '+92 300 4444444',
-      image: 'https://i.pravatar.cc/150?img=14'
+      phone: '+92 300 4444444'
     },
     {
       id: 5,
       name: 'Jawad Maroof',
       role: 'Client Relations',
       email: 'jawad@mkglobalrecruitment.com',
-      phone: '+92 300 5555555',
-      image: 'https://i.pravatar.cc/150?img=5'
+      phone: '+92 300 5555555'
     },
     {
       id: 6,
       name: 'Nasir Ali',
       role: 'Trade Testing Coordinator',
       email: 'nasir@mkglobalrecruitment.com',
-      phone: '+92 300 6666666',
-      image: 'https://i.pravatar.cc/150?img=15'
+      phone: '+92 300 6666666'
     },
     {
       id: 7,
       name: 'Zarak Maqsood',
       role: 'Visa & Compliance Officer',
       email: 'zarak@mkglobalrecruitment.com',
-      phone: '+92 300 7777777',
-      image: 'https://i.pravatar.cc/150?img=16'
+      phone: '+92 300 7777777'
     },
     {
       id: 8,
       name: 'Akhtar Ullah',
       role: 'PR & Communications',
       email: 'akhtar@mkglobalrecruitment.com',
-      phone: '+92 300 8888888',
-      image: 'https://i.pravatar.cc/150?img=9'
+      phone: '+92 300 8888888'
     }
   ];
 
@@ -98,16 +90,6 @@ export default function Team() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-white dark:bg-navy-900 rounded-3xl p-6 border border-slate-200/80 dark:border-white/10 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
             >
-              <div className="relative mb-6">
-                <div className="w-24 h-24 mx-auto rounded-full p-1 bg-gradient-to-tr from-gold-500 to-amber-300">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover rounded-full border-2 border-white dark:border-navy-900"
-                  />
-                </div>
-              </div>
-              
               <div className="text-center space-y-1 mb-4">
                 <h3 className="text-lg font-bold text-navy-900 dark:text-white group-hover:text-gold-500 transition-colors">
                   {member.name}
